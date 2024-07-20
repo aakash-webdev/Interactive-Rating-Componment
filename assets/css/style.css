@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ======================================== Common SCSS ends here ========================================= */
+body {
+  background: radial-gradient(circle at 50% 50%, #dec2ff, #c0a1e4, #7f5dab, #3f1e74, #1f005c);
+}
+
+/* -/-/-/-/-/-/-/-/-/-/- Main SCSS starts here -/-/-/-/-/-/-/-/-/-/- */
+.inner_rating_componment {
+  font-family: "Mukta", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px 0;
+  height: 440px;
+}
+.inner_rating_componment #copyright {
+  color: white;
+  background-color: #474f7a;
+  font-size: 12.5px;
+  line-height: 13px;
+  padding: 2px 5px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+.inner_rating_componment #copyright i {
+  margin: 0 3px;
+}
+.inner_rating_componment #copyright a {
+  text-decoration: none;
+  color: #ff7f3e;
+  transition: 0.3s;
+}
+.inner_rating_componment #copyright a:hover {
+  color: white;
+}
+
+.box_1 {
+  background-color: #1f2544;
+  display: inline-block;
+  font-family: "Mukta", sans-serif;
+  padding: 25px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 7px 16px -3px rgb(0, 0, 0);
+}
+.box_1 .star i {
+  color: #ff7f3e;
+  font-size: 30px;
+  margin: 5px 0 30px;
+  animation: customAni 5s ease-in-out 0s infinite normal none;
+}
+@keyframes customAni {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    rotate: 360deg;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.box_1 .title h1 {
+  margin: 5px 0 30px;
+  color: white;
+}
+.box_1 .subtitle p {
+  color: #9c9c9c;
+  margin: 5px 0 20px;
+  font-size: 18px;
+}
+.box_1 .rating {
+  display: flex;
+  justify-content: center;
+}
+.box_1 .rating .rating_btn {
+  background-color: #474f7a;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 5px 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: 0.25s;
+}
+.box_1 .rating .rating_btn:hover {
+  background-color: #ff7f3e;
+}
+.box_1 .rating .rating_btn.active {
+  border: 2px solid #ff7f3e;
+}
+.box_1 .submit {
+  text-align: center;
+}
+.box_1 .submit a {
+  background-color: #ff7f3e;
+  color: white;
+  margin: 30px 0 0;
+  text-decoration: none;
+  padding: 10px 80px;
+  border-radius: 25px;
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.4);
+  border-bottom: 7px solid #464646;
+}
+.box_1 .submit a:hover {
+  box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+  border-bottom-width: 0px;
+  transform: translateY(7px);
+}
+
+.box_2 {
+  background-color: #1f2544;
+  display: none;
+  font-family: "Mukta", sans-serif;
+  padding: 15px;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 7px 7px 16px -3px rgb(0, 0, 0);
+}
+.box_2 .icon i {
+  color: #ff7f3e;
+  margin: 5px 0 30px;
+  font-size: 80px;
+  animation: scale-down-center 1.6s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate forwards;
+}
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+.box_2 .result {
+  font-size: 20px;
+  line-height: 26px;
+  color: #ff7f3e;
+  background-color: #474f7a;
+  display: inline-block;
+  margin: 5px 0 30px;
+  padding: 10px 13px;
+  border-radius: 25px;
+}
+.box_2 .title h1 {
+  margin: 5px 0 30px;
+  color: white;
+}
+.box_2 .subtitle p {
+  color: #9c9c9c;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* -/-/-/-/-/-/-/-/-/-/- Main SCSS ends here -/-/-/-/-/-/-/-/-/-/- */
+@media only screen and (max-width: 575px) {
+  .inner_rating_componment {
+    height: 481px;
+  }
+  .box_1 {
+    width: 370px;
+  }
+  .box_1 .rating .rating_btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 9px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .inner_rating_componment {
+    height: 497px;
+  }
+  .box_1 {
+    width: 330px;
+    padding: 18px;
+  }
+  .box_1 .rating .rating_btn {
+    margin: 5px 8px;
+  }
+}/*# sourceMappingURL=style.css.map */
