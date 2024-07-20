@@ -1,7 +1,10 @@
 # 🌟 Interactive Rating Component 🌟
 An interactive feedback rating component built with HTML, CSS (SCSS), and JavaScript. Users can select a rating, submit it, and receive a thank you message displaying their selected rating.
 
-![image](https://github.com/user-attachments/assets/9aaace11-74a4-47e5-a7cc-3fb29881201f)
+![image](https://github.com/user-attachments/assets/bf5241ea-662a-4d5a-8f3a-d07f224c52b0)
+![image](https://github.com/user-attachments/assets/2bba8ecc-95a2-4e0f-81ff-07094441b0f3)
+
+
 
 ## ⚠️ Challenges Faced
 ⚡ Managing Dynamic Content:
