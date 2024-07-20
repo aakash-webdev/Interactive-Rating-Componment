@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating Componment</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icons8-rate-50.png">
+
+
+    <!--===== Google Fonts CDN =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--===== Font Awesome CDN =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--===== SCSS =====-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Main starts here -->
+    <main>
+
+        <div class="rating_componment">
+            <div class="container">
+
+                <div class="inner_rating_componment">
+
+                    <!-- BOX 1 starts here -->
+                    <div class="box_1" id="rating_box">
+
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="title">
+                            <h1>Please leave us a review!</h1>
+                        </div>
+
+                        <div class="subtitle">
+                            <p>How likely are you to recommend us for our service to a friend or colleague? </p>
+                        </div>
+
+                        <div class="rating">
+                            <div class="rating_btn">
+                                <p>1</p>
+                            </div>
+                            <div class="rating_btn">
+                                <p>2</p>
+                            </div>
+                            <div class="rating_btn">
+                                <p>3</p>
+                            </div>
+                            <div class="rating_btn">
+                                <p>4</p>
+                            </div>
+                            <div class="rating_btn">
+                                <p>5</p>
+                            </div>
+                        </div>
+
+                        <div class="submit">
+                            <a href="#" id="submit_btn" onclick="submitRating()">SUBMIT</a>
+                        </div>
+
+                    </div>
+                    <!-- BOX 1 ends here -->
+
+
+                    <!-- BOX 2 starts here -->
+                    <div class="box_2" id="thanks_box">
+
+                        <div class="icon">
+                            <i class="fa-brands fa-gratipay"></i>
+                        </div>
+
+                        <div class="result">
+                            <p>You selected <span id="rating_result"></span> out of 5</p>
+                        </div>
+
+                        <div class="title">
+                            <h1>Thank you!</h1>
+                        </div>
+
+                        <div class="subtitle">
+                            <p>Thank you for taking your time to rate us. We appreciate you. Your opinion
+                                help us reach more people.</p>
+                        </div>
+
+                    </div>
+                    <!-- BOX 2 ends here -->
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Main ends here -->
+
+    <!--===== JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
